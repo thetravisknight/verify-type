@@ -27,7 +27,7 @@ Keep it simple. Keep it minimal. Don't put every single feature just because you
 
 <h3>Authors or Acknowledgments</h3>
 <ul>
-  <li>[Travis Knight](https://linktr.ee/thetravisknight)</li>
+  <li>Travis Knight - https://linktr.ee/thetravisknight</li>
 </ul>
 
 <h3>License</h3>
