@@ -2,7 +2,7 @@
 
 <hr/>
 
-<p>Provides the ability to verify a variable is a valid string or number.</p>
+<p>Provides the ability to verify a variable is a valid string, number or array.</p>
 
 <h3> Installation </h3>
 
@@ -29,6 +29,13 @@ console.log(vt.isNumber(undefined)) // false
 console.log(vt.isNumber(1)) // true
 console.log(vt.isNumber(63.55842))) // true
 console.log(vt.isNumber(-884.4845516)) // true
+
+console.log(vt.isArray("Singer, Writer")) // false
+console.log(vt.isArray("")) // false
+console.log(vt.isArray(true)) // false
+console.log(vt.isArray(["1", "2", "3"])) // true
+console.log(vt.isArray(undefined)) // false
+console.log(vt.isArray(1)) // false
 ```
 
 <h3>Contributing</h3>

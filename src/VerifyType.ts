@@ -22,4 +22,15 @@ export class VerifyType {
     }
   }
 
+  isArray(a: any) {
+    try {
+      if (Array.isArray(a)) {
+				return true
+			}
+      return false;
+    } catch (error) {
+      return false;
+    }
+  }
+
 }

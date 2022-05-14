@@ -14,4 +14,11 @@ test('VT', () => {
 	expect(vt.isNumber(1)).toBe(true);
 	expect(vt.isNumber(63.55842)).toBe(true);
 	expect(vt.isNumber(-884.4845516)).toBe(true);
+
+	expect(vt.isArray("Singer, Writer")).toBe(false);
+	expect(vt.isArray("")).toBe(false);
+	expect(vt.isArray(true)).toBe(false);
+	expect(vt.isArray(["1", "2", "3"])).toBe(true);
+	expect(vt.isArray(undefined)).toBe(false);
+	expect(vt.isArray(1)).toBe(false);
 });
