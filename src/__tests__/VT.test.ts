@@ -5,4 +5,13 @@ test('VT', () => {
 	expect(vt.isString(true)).toBe(false);
 	expect(vt.isString(["1", "2", "3"])).toBe(false);
 	expect(vt.isString(undefined)).toBe(false);
+
+	expect(vt.isNumber("Singer, Writer")).toBe(false);
+	expect(vt.isNumber("")).toBe(false);
+	expect(vt.isNumber(true)).toBe(false);
+	expect(vt.isNumber(["1", "2", "3"])).toBe(false);
+	expect(vt.isNumber(undefined)).toBe(false);
+	expect(vt.isNumber(1)).toBe(true);
+	expect(vt.isNumber(63.55842)).toBe(true);
+	expect(vt.isNumber(-884.4845516)).toBe(true);
 });

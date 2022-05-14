@@ -11,4 +11,15 @@ export class VerifyType {
     }
   }
 
+  isNumber(n: any) {
+    try {
+      if (typeof n === 'number') {
+				return true
+			}
+      return false;
+    } catch (error) {
+      return false;
+    }
+  }
+
 }
