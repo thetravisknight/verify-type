@@ -33,4 +33,11 @@ export class VerifyType {
     }
   }
 
+  isEmptyArray(a: any) {
+    if(this.isArray(a) && !a.length) {
+      return true;
+    }
+    return false;
+  }
+
 }

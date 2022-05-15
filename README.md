@@ -2,7 +2,7 @@
 
 <hr/>
 
-<p>Provides the ability to verify a variable is a valid string, number or array.</p>
+<p>Provides the ability to verify a variable is a valid string, number an array or an empty array.</p>
 
 <h3> Installation </h3>
 
@@ -36,6 +36,11 @@ console.log(vt.isArray(true)) // false
 console.log(vt.isArray(["1", "2", "3"])) // true
 console.log(vt.isArray(undefined)) // false
 console.log(vt.isArray(1)) // false
+
+console.log(vt.isEmptyArray(["1", "2", "3"])) // false
+console.log(vt.isEmptyArray([])) // true
+console.log(vt.isEmptyArray(undefined)) // false
+console.log(vt.isEmptyArray(null)) // false
 ```
 
 <h3>Contributing</h3>

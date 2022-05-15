@@ -21,4 +21,9 @@ test('VT', () => {
 	expect(vt.isArray(["1", "2", "3"])).toBe(true);
 	expect(vt.isArray(undefined)).toBe(false);
 	expect(vt.isArray(1)).toBe(false);
+
+	expect(vt.isEmptyArray(["1", "2", "3"])).toBe(false);
+	expect(vt.isEmptyArray([])).toBe(true);
+	expect(vt.isEmptyArray(undefined)).toBe(false);
+	expect(vt.isEmptyArray(null)).toBe(false);
 });
