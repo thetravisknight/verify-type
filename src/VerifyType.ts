@@ -1,10 +1,9 @@
 export class VerifyType {
-
   isString(s: any) {
     try {
       if (typeof s === 'string' || s instanceof String) {
-				return true
-			}
+        return true;
+      }
       return false;
     } catch (error) {
       return false;
@@ -14,8 +13,8 @@ export class VerifyType {
   isNumber(n: any) {
     try {
       if (typeof n === 'number') {
-				return true
-			}
+        return true;
+      }
       return false;
     } catch (error) {
       return false;
@@ -25,8 +24,8 @@ export class VerifyType {
   isArray(a: any) {
     try {
       if (Array.isArray(a)) {
-				return true
-			}
+        return true;
+      }
       return false;
     } catch (error) {
       return false;
@@ -34,10 +33,9 @@ export class VerifyType {
   }
 
   isEmptyArray(a: any) {
-    if(this.isArray(a) && !a.length) {
+    if (this.isArray(a) && !a.length) {
       return true;
     }
     return false;
   }
-
 }

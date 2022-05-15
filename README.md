@@ -2,7 +2,7 @@
 
 <hr/>
 
-<p>Provides the ability to verify a variable is a valid string, number an array or an empty array.</p>
+<p>Provides the ability to verify a variable is a valid string, a number, an array or an empty array.</p>
 
 <h3> Installation </h3>
 
